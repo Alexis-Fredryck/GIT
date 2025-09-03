@@ -1,0 +1,6 @@
+trois nouvelle commande:
+
+git init: crée un projet git
+git status: permet de voir l'etat du projet
+git add <nom du fichier>: ajouter un fichier en 'stage'
+git commit: prendre "une photo" de l'etat du projet

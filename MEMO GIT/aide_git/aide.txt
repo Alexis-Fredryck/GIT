@@ -1,0 +1,47 @@
+📌 Mémo Git – Commandes essentielles
+🔹 Configuration
+git config --global user.name "Ton Nom"
+git config --global user.email "ton.email@example.com"
+git config --list      # voir la config
+
+🔹 Démarrage d’un projet
+git init               # initialiser un repo local
+git clone URL          # cloner un repo distant
+
+🔹 Suivi des fichiers
+git status             # voir l'état des fichiers
+git add fichier.txt    # ajouter un fichier au suivi
+git add .              # ajouter tous les fichiers modifiés
+git commit -m "Message" # valider les changements
+
+🔹 Historique
+git log                # voir l'historique complet
+git log --oneline      # historique résumé
+git diff               # voir les différences non validées
+git show <commit>      # détails d’un commit
+
+🔹 Branches
+git branch             # lister les branches
+git branch nouvelle    # créer une branche
+git checkout nouvelle  # changer de branche
+git checkout -b nouvelle   # créer + basculer
+git merge branche      # fusionner dans la branche actuelle
+git branch -d branche  # supprimer une branche
+
+🔹 Travail collaboratif (remote)
+git remote -v               # voir les remotes
+git remote add origin URL   # ajouter un dépôt distant
+git push origin main        # envoyer sur GitHub (branche main)
+git pull origin main        # récupérer les changements
+git fetch                   # télécharger sans fusionner
+
+🔹 Annuler / Corriger
+git checkout -- fichier.txt     # annuler les modifs d’un fichier
+git reset HEAD fichier.txt      # retirer du `git add`
+git commit --amend              # modifier le dernier commit
+git revert <commit>             # annuler un commit en créant un nouveau
+
+🔹 Stash (mettre de côté)
+git stash           # mettre les modifs de côté
+git stash pop       # les récupérer
+git stash list      # voir la liste
